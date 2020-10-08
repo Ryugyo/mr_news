@@ -32,5 +32,5 @@ jobs:
       with:
         app-name: 'mrnews'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_92b823942f344409933f698910a6eaaf }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_68178d2211284eebbf24abe931cc6a00 }}
         package: .
