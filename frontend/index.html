@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Mr News</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"/>
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Pinyon+Script"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <link href="style/main.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <!--Welcome Page-->
+    <body class="webpage_background">
+        <div class="container">
+            <div class="page-header">
+                <!--Login Section-->
+                <div class="row justify-content-center">
+                    <div class="col-md-auto symbol_image animated bounceInDown"></div>
+                    <div class="w-100"></div>
+                    <span class="col-md-auto animated bounceInRight">
+                        <h1 class="display-5 text-white"> Introduction </h1>
+                        <p class="text-white" style="font-size:130%;"> <em>Mr.News</em> is a <mark>news aggregator website</mark> that compiles news feeds from a variety of online sources for the user. It is <ins>a lightweight website</ins> and can be operated by <strong>any kind of user</strong>, with or without programming skills. It is designed as a helping tool for students/seniors/business people <ins>to reach the fastest news</ins> when they don’t wish to spend much time on browser different website pages. With this web application, users are able to <strong>organize, read and share information</strong> they are interested in. </p>
+                    </span>
+                    <div class="w-100"></div>
+                    <h1 class="h3 top_buffer col-md-auto mb-3 font-weight-normal text-light animated bounceInRight">Please sign in</h1>
+                    <div class="w-100"></div>
+                    <form class="row justify-content-center" action='/MrNews/login/' method="POST">
+                        <input type="text" name="username" class="col-6 form-control form-control-lg animated bounceInLeft" placeholder="username" required/>
+                        <div class="w-100"></div>
+                        <input type="password" name="password" class="top_buffer col-6 form-control form-control-lg animated bounceInLeft" placeholder="password" required/>
+                        <div class="w-100"></div>
+                        <button type="submit" class="top_buffer col-md-auto btn btn-primary btn-lg text-uppercase animated bounceInLeft"> Login </button>
+                    </form>
+                </div>
+
+                <!--Signup Section-->
+                <div class="row justify-content-center">
+                    <div class="top_buffer col-md-auto text-white animated bounceInLeft">
+						Don't have an account? <a href="/signUp.html">Sign Up</a>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col-md-auto animated bounceInLeft"> <a href='/credits.html'>credits</a> </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="error_box"></div>
+
+        <script type = "text/javascript">
+            $(function(){
+                $(".close").click(function(){
+                    $("#myAlert").alert('close');
+                });
+            });  
+        </script> 
+    </body>
+
+    <footer>
+        <script src="js/api.js"></script>
+    </footer>
+</html>
